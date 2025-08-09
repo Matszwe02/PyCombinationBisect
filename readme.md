@@ -16,6 +16,6 @@ How the algorithm behaves when something needs `1`, `3`, `4` and `10` to run suc
 
 ![alt text](.github/image.png)
 
-It only works when behavior is monotonic, in the case of this graph there can't be any "overhangs". In that case once rejected (unnecessary) elements cannot be re-added into testing set.
+It only works when behavior is monotonic (if function fails with `x`, it should also fail with `x`-`y`), in the case of this graph there can't be any "overhangs". In that case once rejected (unnecessary) elements cannot be re-added into testing set. So make sure that you do not input anything with its dependencies side-to-side, as that may result discarding both of them - that logic should be handled by supplying dependencies into the items themselves.
 
 See `example.py` for an example implementation.
