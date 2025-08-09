@@ -12,7 +12,7 @@ Logic can be flipped to see for example which packages can be installed, or in g
 
 It uses binary search to split list into 2 halves, then the remaining lists into halves, etc. Finished when narrowed down to exact elements.
 
-How the algorithm behaves when something needs `1`, `3`, `4` and `10` to run successfully, each row is one iteration
+How the algorithm behaves when something needs `1`, `3`, `4` and `10` to run successfully among 16 possibilities, each row is one iteration
 
 ![alt text](.github/image.png)
 
